@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Associate .hexhex with a file type
+[HKEY_CLASSES_ROOT\.hexhex]
+@="HexHexFile"
+
+; Give the file type a friendly name
+[HKEY_CLASSES_ROOT\HexHexFile]
+@="HexHex Binary File"
+
+; Optional: set a default icon (uses a system icon)
+[HKEY_CLASSES_ROOT\HexHexFile\DefaultIcon]
+@="C:\\Windows\\System32\\shell32.dll,1"
+
+; Set the program to open .hexhex files
+[HKEY_CLASSES_ROOT\HexHexFile\shell\open\command]
+@="\"C:\\Users\\rvasc\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
